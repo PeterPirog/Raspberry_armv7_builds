@@ -11,4 +11,5 @@ peterpirogtf@gmail.com
 To install:
 
 cd name_of_dir_with_file
+
 python3 -m pip install file_name.whl
