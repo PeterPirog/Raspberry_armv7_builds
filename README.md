@@ -7,3 +7,8 @@ All files are builded with Raspberry Pi 4 device without using cross-compilation
 Files are mainly for Python 3.8
 
 peterpirogtf@gmail.com
+
+To install:
+
+cd name_of_dir_with_file
+python3 -m pip install file_name.whl
