@@ -1,0 +1,10 @@
+sudo apt-get install libjpeg-dev zlib1g-dev libtiff-dev libfreetype6
+#sudo apt-get install liblcms liblcms-utils
+sudo apt-get install libwebp-dev
+sudo apt-get install tcl
+sudo apt-get install libimagequant-dev
+sudo apt-get install  libraqm-dev
+sudo apt-get install libxcb-randr0-dev libxcb-xtest0-dev libxcb-xinerama0-dev libxcb-shape0-dev libxcb-xkb-dev
+sudo apt install libopenjp2-7-dev
+sudo apt-get install -y liblcms2-utils
+sudo apt-get install -y liblcms2-dev
