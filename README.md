@@ -6,4 +6,4 @@ I built this files for own purpose however I hope it can be usefull for the othe
 All files are builded with Raspberry Pi 4 device without using cross-compilation. 
 Files are mainly for Python 3.8
 
-peterpirog@gmail.com
+peterpirogtf@gmail.com
