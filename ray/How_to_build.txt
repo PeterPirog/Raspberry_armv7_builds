@@ -38,7 +38,7 @@ sudo bazel build --action_env=LD_LIBRARY_PATH --linkopt=-latomic -c opt //:ray_p
 
 4) MAKING WHL FILE
 !!!  CHANGE LINE 296 in /src/ray/common/ray_config_def.hray/python/setup.py to 
-["build", "--linkopt=-latomic", "--"] + bazel_targets, setup.py linia 296
+["build", "--linkopt=-latomic", "--"] + bazel_targets,
 
 cd /ray/python 
 sudo python3 setup.py bdist_wheel
