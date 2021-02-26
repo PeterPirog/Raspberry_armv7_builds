@@ -1,0 +1,10 @@
+14082:C 26 Feb 2021 16:16:35.260 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+14082:C 26 Feb 2021 16:16:35.260 # Redis version=6.0.9, bits=32, commit=00000000, modified=0, pid=14082, just started
+14082:C 26 Feb 2021 16:16:35.260 # Configuration loaded
+14082:M 26 Feb 2021 16:16:35.263 # Could not create server TCP listening socket *:6379: bind: Address already in use
+14083:C 26 Feb 2021 16:16:35.415 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+14083:C 26 Feb 2021 16:16:35.415 # Redis version=6.0.9, bits=32, commit=00000000, modified=0, pid=14083, just started
+14083:C 26 Feb 2021 16:16:35.415 # Configuration loaded
+14083:M 26 Feb 2021 16:16:35.418 # Warning: 32 bit instance detected but no memory limit set. Setting 3 GB maxmemory limit with 'noeviction' policy now.
+14083:M 26 Feb 2021 16:16:35.418 # Server initialized
+14083:M 26 Feb 2021 16:16:35.418 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.

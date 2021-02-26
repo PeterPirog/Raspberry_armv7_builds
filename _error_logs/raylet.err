@@ -1,0 +1,5 @@
+[2021-02-26 16:16:36,517 C 14108 14117] dlmalloc.cc:103: failed to ftruncate file /dev/shm/plasmaS0XSqJ
+[2021-02-26 16:16:36,517 E 14108 14117] logging.cc:415: *** Aborted at 1614352596 (unix time) try "date -d @1614352596" if you are using GNU date ***
+[2021-02-26 16:16:36,585 E 14108 14117] logging.cc:415: PC: @        0x0 (unknown)
+[2021-02-26 16:16:36,585 E 14108 14117] logging.cc:415: *** SIGABRT (@0x371c) received by PID 14108 (TID 0xb25ff3f0) from PID 14108; stack trace: ***
+[2021-02-26 16:16:36,586 E 14108 14117] logging.cc:415:     @ 0xb6bc5130 (unknown)
