@@ -1,21 +1,21 @@
-[2021-02-26 16:16:35,914 I 14092 14092] io_service_pool.cc:36: IOServicePool is running with 1 io_service.
-[2021-02-26 16:16:35,919 I 14092 14092] gcs_redis_failure_detector.cc:30: Starting redis failure detector.
-[2021-02-26 16:16:35,919 I 14092 14092] gcs_init_data.cc:44: Loading job table data.
-[2021-02-26 16:16:35,919 I 14092 14092] gcs_init_data.cc:56: Loading node table data.
-[2021-02-26 16:16:35,919 I 14092 14092] gcs_init_data.cc:68: Loading object table data.
-[2021-02-26 16:16:35,919 I 14092 14092] gcs_init_data.cc:81: Loading cluster resources table data.
-[2021-02-26 16:16:35,919 I 14092 14092] gcs_init_data.cc:108: Loading actor table data.
-[2021-02-26 16:16:35,919 I 14092 14092] gcs_init_data.cc:94: Loading placement group table data.
-[2021-02-26 16:16:35,920 I 14092 14092] gcs_init_data.cc:48: Finished loading job table data, size = 0
-[2021-02-26 16:16:35,920 I 14092 14092] gcs_init_data.cc:60: Finished loading node table data, size = 0
-[2021-02-26 16:16:35,920 I 14092 14092] gcs_init_data.cc:73: Finished loading object table data, size = 0
-[2021-02-26 16:16:35,920 I 14092 14092] gcs_init_data.cc:85: Finished loading cluster resources table data, size = 0
-[2021-02-26 16:16:35,920 I 14092 14092] gcs_init_data.cc:112: Finished loading actor table data, size = 0
-[2021-02-26 16:16:35,920 I 14092 14092] gcs_init_data.cc:99: Finished loading placement group table data, size = 0
-[2021-02-26 16:16:35,939 I 14092 14092] grpc_server.cc:75: GcsServer server started, listening on port 43759.
-[2021-02-26 16:16:35,961 I 14092 14092] gcs_server.cc:267: Gcs server address = 192.168.1.31:43759
-[2021-02-26 16:16:35,961 I 14092 14092] gcs_server.cc:271: Finished setting gcs server address: 192.168.1.31:43759
-[2021-02-26 16:16:35,962 I 14092 14092] gcs_server.cc:357: GcsNodeManager: {RegisterNode request count: 0, UnregisterNode request count: 0, GetAllNodeInfo request count: 0, SetInternalConfig request count: 0, GetInternalConfig request count: 0}
+[2021-02-26 16:46:13,042 I 14736 14736] io_service_pool.cc:36: IOServicePool is running with 1 io_service.
+[2021-02-26 16:46:13,046 I 14736 14736] gcs_redis_failure_detector.cc:30: Starting redis failure detector.
+[2021-02-26 16:46:13,046 I 14736 14736] gcs_init_data.cc:44: Loading job table data.
+[2021-02-26 16:46:13,046 I 14736 14736] gcs_init_data.cc:56: Loading node table data.
+[2021-02-26 16:46:13,046 I 14736 14736] gcs_init_data.cc:68: Loading object table data.
+[2021-02-26 16:46:13,046 I 14736 14736] gcs_init_data.cc:81: Loading cluster resources table data.
+[2021-02-26 16:46:13,047 I 14736 14736] gcs_init_data.cc:108: Loading actor table data.
+[2021-02-26 16:46:13,047 I 14736 14736] gcs_init_data.cc:94: Loading placement group table data.
+[2021-02-26 16:46:13,047 I 14736 14736] gcs_init_data.cc:48: Finished loading job table data, size = 0
+[2021-02-26 16:46:13,048 I 14736 14736] gcs_init_data.cc:60: Finished loading node table data, size = 0
+[2021-02-26 16:46:13,048 I 14736 14736] gcs_init_data.cc:73: Finished loading object table data, size = 0
+[2021-02-26 16:46:13,048 I 14736 14736] gcs_init_data.cc:85: Finished loading cluster resources table data, size = 0
+[2021-02-26 16:46:13,048 I 14736 14736] gcs_init_data.cc:112: Finished loading actor table data, size = 0
+[2021-02-26 16:46:13,048 I 14736 14736] gcs_init_data.cc:99: Finished loading placement group table data, size = 0
+[2021-02-26 16:46:13,067 I 14736 14736] grpc_server.cc:75: GcsServer server started, listening on port 34973.
+[2021-02-26 16:46:13,090 I 14736 14736] gcs_server.cc:267: Gcs server address = 192.168.1.31:34973
+[2021-02-26 16:46:13,090 I 14736 14736] gcs_server.cc:271: Finished setting gcs server address: 192.168.1.31:34973
+[2021-02-26 16:46:13,090 I 14736 14736] gcs_server.cc:357: GcsNodeManager: {RegisterNode request count: 0, UnregisterNode request count: 0, GetAllNodeInfo request count: 0, SetInternalConfig request count: 0, GetInternalConfig request count: 0}
 GcsActorManager: {RegisterActor request count: 0, CreateActor request count: 0, GetActorInfo request count: 0, GetNamedActorInfo request count: 0, Registered actors count: 0, Destroyed actors count: 0, Named actors count: 0, Unresolved actors count: 0, Pending actors count: 0, Created actors count: 0}
 GcsObjectManager: {GetObjectLocations request count: 0, GetAllObjectLocations request count: 0, AddObjectLocation request count: 0, RemoveObjectLocation request count: 0, Object count: 0}
 GcsPlacementGroupManager: {CreatePlacementGroup request count: 0, RemovePlacementGroup request count: 0, GetPlacementGroup request count: 0, GetAllPlacementGroup request count: 0, WaitPlacementGroupUntilReady request count: 0, Registered placement groups count: 0, Pending placement groups count: 0}
@@ -23,4 +23,4 @@ GcsPubSub:
 - num channels subscribed to: 0
 - total commands queued: 0
 DefaultTaskInfoHandler: {AddTask request count: 0, GetTask request count: 0, AddTaskLease request count: 0, GetTaskLease request count: 0, AttemptTaskReconstruction request count: 0}
-[2021-02-26 16:16:45,927 W 14092 14094] metric_exporter.cc:206: Export metrics to agent failed: IOError: 14: failed to connect to all addresses. This won't affect Ray, but you can lose metrics from the cluster.
+[2021-02-26 16:46:23,053 W 14736 14738] metric_exporter.cc:206: Export metrics to agent failed: IOError: 14: failed to connect to all addresses. This won't affect Ray, but you can lose metrics from the cluster.
