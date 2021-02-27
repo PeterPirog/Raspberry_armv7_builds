@@ -1,5 +1,5 @@
-[2021-02-26 16:46:13,597 C 14752 14762] dlmalloc.cc:103: failed to ftruncate file /dev/shm/plasmaJRQMES
-[2021-02-26 16:46:13,597 E 14752 14762] logging.cc:415: *** Aborted at 1614354373 (unix time) try "date -d @1614354373" if you are using GNU date ***
-[2021-02-26 16:46:13,665 E 14752 14762] logging.cc:415: PC: @        0x0 (unknown)
-[2021-02-26 16:46:13,665 E 14752 14762] logging.cc:415: *** SIGABRT (@0x39a0) received by PID 14752 (TID 0xb25fb3f0) from PID 14752; stack trace: ***
-[2021-02-26 16:46:13,666 E 14752 14762] logging.cc:415:     @ 0xb6be8130 (unknown)
+[2021-02-27 10:23:38,372 C 8647 8657] dlmalloc.cc:103: failed to ftruncate file /dev/shm/plasmaTO48oB
+[2021-02-27 10:23:38,372 E 8647 8657] logging.cc:415: *** Aborted at 1614417818 (unix time) try "date -d @1614417818" if you are using GNU date ***
+[2021-02-27 10:23:38,422 E 8647 8657] logging.cc:415: PC: @        0x0 (unknown)
+[2021-02-27 10:23:38,422 E 8647 8657] logging.cc:415: *** SIGABRT (@0x21c7) received by PID 8647 (TID 0xb23fb3f0) from PID 8647; stack trace: ***
+[2021-02-27 10:23:38,423 E 8647 8657] logging.cc:415:     @ 0xb6b9a130 (unknown)

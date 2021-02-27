@@ -1,10 +1,10 @@
-14731:C 26 Feb 2021 16:46:12.721 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-14731:C 26 Feb 2021 16:46:12.721 # Redis version=6.0.9, bits=32, commit=00000000, modified=0, pid=14731, just started
-14731:C 26 Feb 2021 16:46:12.721 # Configuration loaded
-14731:M 26 Feb 2021 16:46:12.723 # Could not create server TCP listening socket *:6379: bind: Address already in use
-14732:C 26 Feb 2021 16:46:12.870 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-14732:C 26 Feb 2021 16:46:12.870 # Redis version=6.0.9, bits=32, commit=00000000, modified=0, pid=14732, just started
-14732:C 26 Feb 2021 16:46:12.870 # Configuration loaded
-14732:M 26 Feb 2021 16:46:12.873 # Warning: 32 bit instance detected but no memory limit set. Setting 3 GB maxmemory limit with 'noeviction' policy now.
-14732:M 26 Feb 2021 16:46:12.873 # Server initialized
-14732:M 26 Feb 2021 16:46:12.874 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+8626:C 27 Feb 2021 10:23:37.347 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+8626:C 27 Feb 2021 10:23:37.347 # Redis version=6.0.9, bits=32, commit=00000000, modified=0, pid=8626, just started
+8626:C 27 Feb 2021 10:23:37.347 # Configuration loaded
+8626:M 27 Feb 2021 10:23:37.350 # Could not create server TCP listening socket *:6379: bind: Address already in use
+8627:C 27 Feb 2021 10:23:37.517 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+8627:C 27 Feb 2021 10:23:37.517 # Redis version=6.0.9, bits=32, commit=00000000, modified=0, pid=8627, just started
+8627:C 27 Feb 2021 10:23:37.517 # Configuration loaded
+8627:M 27 Feb 2021 10:23:37.521 # Warning: 32 bit instance detected but no memory limit set. Setting 3 GB maxmemory limit with 'noeviction' policy now.
+8627:M 27 Feb 2021 10:23:37.521 # Server initialized
+8627:M 27 Feb 2021 10:23:37.521 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.

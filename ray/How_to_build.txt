@@ -40,6 +40,9 @@ sudo bazel build --action_env=LD_LIBRARY_PATH --linkopt=-latomic -c opt //:ray_p
 !!!  CHANGE LINE 296 in /src/ray/common/ray_config_def.hray/python/setup.py to 
 ["build", "--linkopt=-latomic", "--"] + bazel_targets,
 
+#Builing dashboard
+cd python/ray/new_dashboard/client && npm install && npm ci && npm run build
+
 cd /ray/python 
 sudo python3 setup.py bdist_wheel
 
@@ -47,3 +50,14 @@ whl file is in /ray/python/dist
 
 5) INSTALL WHL
 python3 -m pip install ray-1.2.0-cp38-cp38-linux_armv7l.whl
+
+#Additional problems with swap and kubernetes
+https://kaluzny.io/k3s-i-raspberry-pi-4-czyli-taki-maly-wlasny-kubernetes/
+https://opensource.com/article/20/6/kubernetes-raspberry-pi
+
+
+#check flags
+sudo docker info
+
+#add cgroup flags
+sudo sed -i '$ s/$/ cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1 swapaccount=1/' /boot/cmdline.txt

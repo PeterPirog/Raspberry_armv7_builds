@@ -1,12 +1,47 @@
-2021-02-26 16:46:15,351	INFO head.py:48 -- Dashboard head grpc address: 192.168.1.31:35191
-2021-02-26 16:46:15,351	INFO head.py:50 -- Dashboard head http address: 127.0.0.1:8265
-2021-02-26 16:46:15,357	WARNING dashboard.py:208 -- The dashboard on node raspberrypi failed with the following error:
-Traceback (most recent call last):
-  File "/home/pi/RayProject/env-ray/lib/python3.8/site-packages/ray/new_dashboard/dashboard.py", line 187, in <module>
-    dashboard = Dashboard(
-  File "/home/pi/RayProject/env-ray/lib/python3.8/site-packages/ray/new_dashboard/dashboard.py", line 81, in __init__
-    build_dir = setup_static_dir()
-  File "/home/pi/RayProject/env-ray/lib/python3.8/site-packages/ray/new_dashboard/dashboard.py", line 38, in setup_static_dir
-    raise OSError(
-FileNotFoundError: [Errno 2] Dashboard build directory not found. If installing from source, please follow the additional steps required to build the dashboard(cd python/ray/new_dashboard/client && npm install && npm ci && npm run build): '/home/pi/RayProject/env-ray/lib/python3.8/site-packages/ray/new_dashboard/client/build'
-
+2021-02-27 10:23:40,108	INFO head.py:48 -- Dashboard head grpc address: 192.168.1.31:42365
+2021-02-27 10:23:40,109	INFO head.py:50 -- Dashboard head http address: 127.0.0.1:8265
+2021-02-27 10:23:40,109	INFO dashboard.py:82 -- Setup static dir for dashboard: /home/pi/RayProject/env-ray/lib/python3.8/site-packages/ray/new_dashboard/client/build
+2021-02-27 10:23:40,116	INFO head.py:161 -- Connect to GCS at b'192.168.1.31:40543'
+2021-02-27 10:23:40,173	INFO utils.py:202 -- Get all modules by type: DashboardHeadModule
+2021-02-27 10:23:41,254	INFO head.py:129 -- Loading DashboardHeadModule: <class 'ray.new_dashboard.modules.job.job_head.JobHead'>
+2021-02-27 10:23:41,254	INFO head.py:129 -- Loading DashboardHeadModule: <class 'ray.new_dashboard.modules.log.log_head.LogHead'>
+2021-02-27 10:23:41,255	INFO head.py:129 -- Loading DashboardHeadModule: <class 'ray.new_dashboard.modules.logical_view.logical_view_head.LogicalViewHead'>
+2021-02-27 10:23:41,255	INFO head.py:129 -- Loading DashboardHeadModule: <class 'ray.new_dashboard.modules.reporter.reporter_head.ReportHead'>
+2021-02-27 10:23:41,256	INFO head.py:129 -- Loading DashboardHeadModule: <class 'ray.new_dashboard.modules.stats_collector.stats_collector_head.StatsCollector'>
+2021-02-27 10:23:41,256	INFO head.py:129 -- Loading DashboardHeadModule: <class 'ray.new_dashboard.modules.tune.tune_head.TuneController'>
+2021-02-27 10:23:41,256	INFO head.py:134 -- Loaded 6 modules.
+2021-02-27 10:23:41,262	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /> -> <function Dashboard.get_index at 0xb07b3b68>
+2021-02-27 10:23:41,263	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /favicon.ico> -> <function Dashboard.get_favicon at 0xb07b3bf8>
+2021-02-27 10:23:41,263	INFO head.py:209 -- <ResourceRoute [GET] <StaticResource  /static -> PosixPath('/home/pi/RayProject/env-ray/lib/python3.8/site-packages/ray/new_dashboard/client/build/static')> -> <bound method StaticResource._handle of <StaticResource  /static -> PosixPath('/home/pi/RayProject/env-ray/lib/python3.8/site-packages/ray/new_dashboard/client/build/static')>>
+2021-02-27 10:23:41,263	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /jobs> -> <function JobHead.get_all_jobs[cache ttl=2, max_size=128] at 0xaff5a9b8>
+2021-02-27 10:23:41,263	INFO head.py:209 -- <ResourceRoute [GET] <DynamicResource  /jobs/{job_id}> -> <function JobHead.get_job[cache ttl=2, max_size=128] at 0xaff5ab20>
+2021-02-27 10:23:41,264	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /log_index> -> <function LogHead.get_log_index at 0xaff5ae80>
+2021-02-27 10:23:41,264	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /log_proxy> -> <function LogHead.get_log_from_proxy at 0xaff5af10>
+2021-02-27 10:23:41,264	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /logical/actor_groups> -> <function LogicalViewHead.get_actor_groups at 0xaf5f26a0>
+2021-02-27 10:23:41,264	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /logical/actors> -> <function LogicalViewHead.get_all_actors[cache ttl=2, max_size=128] at 0xaf5f2778>
+2021-02-27 10:23:41,264	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /logical/kill_actor> -> <function LogicalViewHead.kill_actor at 0xaf5f2898>
+2021-02-27 10:23:41,265	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /api/launch_profiling> -> <function ReportHead.launch_profiling at 0xac984220>
+2021-02-27 10:23:41,265	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /api/ray_config> -> <function ReportHead.get_ray_config at 0xac9842b0>
+2021-02-27 10:23:41,265	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /api/cluster_status> -> <function ReportHead.get_cluster_status at 0xac984340>
+2021-02-27 10:23:41,265	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /nodes> -> <function StatsCollector.get_all_nodes[cache ttl=2, max_size=128] at 0xac941190>
+2021-02-27 10:23:41,265	INFO head.py:209 -- <ResourceRoute [GET] <DynamicResource  /nodes/{node_id}> -> <function StatsCollector.get_node[cache ttl=2, max_size=128] at 0xac9412f8>
+2021-02-27 10:23:41,266	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /memory/memory_table> -> <function StatsCollector.get_memory_table at 0xac9413d0>
+2021-02-27 10:23:41,266	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /memory/set_fetch> -> <function StatsCollector.set_fetch_memory_info at 0xac941460>
+2021-02-27 10:23:41,266	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /node_logs> -> <function StatsCollector.get_logs at 0xac9414f0>
+2021-02-27 10:23:41,266	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /node_errors> -> <function StatsCollector.get_errors at 0xac941580>
+2021-02-27 10:23:41,266	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /tune/info> -> <function TuneController.tune_info at 0xaaef3f58>
+2021-02-27 10:23:41,267	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /tune/availability> -> <function TuneController.get_availability at 0xaaef8028>
+2021-02-27 10:23:41,267	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /tune/set_experiment> -> <function TuneController.set_tune_experiment at 0xaaef80b8>
+2021-02-27 10:23:41,267	INFO head.py:209 -- <ResourceRoute [GET] <PlainResource  /tune/enable_tensorboard> -> <function TuneController.enable_tensorboard at 0xaaef8148>
+2021-02-27 10:23:41,267	INFO head.py:209 -- <ResourceRoute [GET] <StaticResource  /logs -> PosixPath('/tmp/ray/session_2021-02-27_10-23-37_080029_8617/logs')> -> <bound method StaticResource._handle of <StaticResource  /logs -> PosixPath('/tmp/ray/session_2021-02-27_10-23-37_080029_8617/logs')>>
+2021-02-27 10:23:41,268	INFO head.py:210 -- Registered 24 routes.
+2021-02-27 10:23:41,269	INFO datacenter.py:65 -- Purge data.
+2021-02-27 10:23:41,276	INFO reporter_head.py:138 -- Subscribed to RAY_REPORTER:*
+2021-02-27 10:23:41,277	INFO job_head.py:73 -- Subscribed to JOB:*
+2021-02-27 10:23:41,278	INFO job_head.py:78 -- Getting all job info from GCS.
+2021-02-27 10:23:41,278	INFO stats_collector_head.py:176 -- Subscribed to ACTOR:*
+2021-02-27 10:23:41,278	INFO stats_collector_head.py:186 -- Getting all actor info from GCS.
+2021-02-27 10:23:41,279	INFO stats_collector_head.py:274 -- Subscribed to <_Sender name:b'RAY_LOG_CHANNEL', is_pattern:False, receiver:<Receiver is_active:True, senders:1, qsize:0>>
+2021-02-27 10:23:41,280	INFO stats_collector_head.py:297 -- Subscribed to b'ERROR_INFO:*'
+2021-02-27 10:23:41,363	INFO stats_collector_head.py:212 -- Received 0 actor info from GCS.
+2021-02-27 10:23:41,365	INFO job_head.py:89 -- Received 0 job info from GCS.
